@@ -1,7 +1,7 @@
 {
   "name": "browser-sleuth",
   "bin": {
-    "browser-sleuth": "./sleuth"
+    "browser-sleuth": "./sleuth.sh"
   },
   "version": "0.2.0",
   "description": "Discovers browser versions for you",
