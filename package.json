@@ -1,5 +1,8 @@
 {
   "name": "browser-sleuth",
+  "bin": {
+    "browser-sleuth": "./sleuth"
+  },
   "version": "0.1.0",
   "description": "Discovers browser versions for you",
   "main": "index.js",

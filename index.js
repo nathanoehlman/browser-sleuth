@@ -1,4 +1,5 @@
 var browsers = {
+	chrome: require('./lib/chrome'),
 	firefox: require('./lib/firefox')
 };
 
