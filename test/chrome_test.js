@@ -18,6 +18,7 @@ describe('Chrome sleuthing', function() {
 
 					info.family.should.equal('chrome');
 					info.channel.should.equal(channel);
+					info.download.should.be.ok;
 					return done();
 				});
 			}, function(err) {
@@ -25,4 +26,14 @@ describe('Chrome sleuthing', function() {
 			}
 		);
 	});
+
+	it('should use the correct URL for canary on mac', function(done) {
+		sleuth.discover('chrome', {
+			channel: 'nightly'
+		}, function(err, info) {
+			if (err || !info) return done(err || 'No result found');
+			info.download.should.equal('https://dl.google.com/release2/q/canary/googlechrome.dmg');
+			return done();
+		});
+	})
 });
