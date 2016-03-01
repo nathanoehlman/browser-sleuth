@@ -3,7 +3,7 @@
   "bin": {
     "browser-sleuth": "./sleuth.sh"
   },
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "Discovers browser versions for you",
   "main": "index.js",
   "scripts": {
