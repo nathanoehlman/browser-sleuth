@@ -29,6 +29,7 @@ describe('Chrome sleuthing', function() {
 
 	it('should use the correct URL for canary on mac', function(done) {
 		sleuth.discover('chrome', {
+            platform: 'mac',
 			channel: 'nightly'
 		}, function(err, info) {
 			if (err || !info) return done(err || 'No result found');
